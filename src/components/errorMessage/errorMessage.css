@@ -1,0 +1,9 @@
+.random-block img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.random-block h5 {
+    text-align: center;
+    margin-top: 10px;
+}
