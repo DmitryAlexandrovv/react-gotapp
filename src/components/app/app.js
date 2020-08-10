@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import {Col, Row, Container, ButtonToggle} from 'reactstrap';
 import Header from '../header';
 import RandomChar from '../randomChar';
-import ItemList from '../itemList';
-import CharDetails from '../charDetails';
-import styled from "styled-components";
 import ErrorMessage from '../errorMessage';
 import './app.css'
+import CharactersPage from '../pages/charactersPage/'
+import BooksPage from '../pages/booksPage';
+import HousesPage from '../pages/housesPage';
+
 
 class App extends Component {
     state = {
@@ -20,12 +21,6 @@ class App extends Component {
             return {
                 showRandomChar: !state.showRandomChar,
             }
-        });
-    }
-
-    toggleSelectedChar = (id) => {
-        this.setState({
-            selectedChar: id
         });
     }
 
@@ -48,14 +43,9 @@ class App extends Component {
                             <button type="button" className="toggle-btn" onClick={this.toggleRandomChar}>Toggle random Character</button>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col md='6'>
-                            <ItemList toggleSelectedChar={this.toggleSelectedChar} />
-                        </Col>
-                        <Col md='6'>
-                            <CharDetails charId={this.state.selectedChar} />
-                        </Col>
-                    </Row>
+                    <CharactersPage />
+                    <BooksPage />
+                    <HousesPage />
                 </Container>
             </>
         );

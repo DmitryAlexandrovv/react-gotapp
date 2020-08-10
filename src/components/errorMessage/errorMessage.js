@@ -5,8 +5,8 @@ import './errorMessage.css';
 const ErrorMessage = () => {
     return(
         <>
-        <img src={img}></img>
-        <h5>Something goes wrong</h5>
+        <img className="error-img" src={img}></img>
+        <h5 className="error-text">Something goes wrong</h5>
         </>
     )
 }
