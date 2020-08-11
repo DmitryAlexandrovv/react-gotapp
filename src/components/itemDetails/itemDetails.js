@@ -61,14 +61,6 @@ export default class ItemDetails extends Component {
 
     render() {
 
-        if (!this.state.item && this.state.error) {
-            return <ErrorMessage/>
-        } else if (!this.state.item) {
-            return <span className="select-error">Please select a {this.props.label}</span>
-        }
-
-        const {name, gender, born, died, culture} = this.state.item;
-
         if (this.state.loading) {
             return (
                 <div className="char-details rounded">
@@ -76,6 +68,14 @@ export default class ItemDetails extends Component {
                 </div>
             )
         }
+
+        if (!this.state.item && this.state.error) {
+            return <ErrorMessage/>
+        } else if (!this.state.item) {
+            return <span className="select-error">Please select a {this.props.label}</span>
+        }
+
+        const {name, gender, born, died, culture} = this.state.item;
 
         const {item} = this.state;
 
