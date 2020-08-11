@@ -67,7 +67,9 @@ export default class GotService {
             id: this._extractId(book),
             name: book.name,
             authors: book.authors,
+            publisher: book.publisher,
             numberOfPages: book.numberOfPages,
+            released: book.released,
         }
     }
 

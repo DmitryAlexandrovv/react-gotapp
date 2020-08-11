@@ -9,8 +9,10 @@ export default class BooksItem extends Component {
     render() {
         return(
             <ItemDetails label='character' itemId={this.props.bookId} getData={this.gotService.getBook}>
-                <Field label='Name' field='name'></Field>
                 <Field label='Authors' field='authors'></Field>
+                <Field label='Publisher' field='publisher'></Field>
+                <Field label='Number of pages' field='numberOfPages'></Field>
+                <Field label='Released' field='released'></Field>
             </ItemDetails>
         )
     }
