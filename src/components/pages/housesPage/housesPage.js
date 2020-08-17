@@ -26,6 +26,7 @@ export default class HousesPage extends Component {
                     toggleSelectedItem={this.toggleSelectedHouse} 
                     getData={this.gotService.getHouses}
                     renderItem={(item) => `${item.name}`}
+                    maxPageId='45'
                 />
             )
 

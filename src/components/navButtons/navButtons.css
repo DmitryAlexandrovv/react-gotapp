@@ -1,0 +1,27 @@
+.nav-buttons {
+    margin-top: 20px;
+}
+
+.nav-buttons-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.page-counter {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.page-selected {
+    color: #fff;
+    background: transparent;
+    display: inline-block;
+    width: 45px;
+    border: 0;
+}
+
+.input-error {
+    border: 1px solid red;
+}

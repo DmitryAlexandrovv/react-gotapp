@@ -29,6 +29,7 @@ class BooksPage extends Component {
                 }} 
                 getData={this.gotService.getBooks}
                 renderItem={(item) => `${item.name} (${item.authors})`}
+                maxPageId='2'
             />
         )
     }

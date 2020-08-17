@@ -26,6 +26,7 @@ export default class CharactersPage extends Component {
                     toggleSelectedItem={this.toggleSelectedChar} 
                     getData={this.gotService.getAllCharacters}
                     renderItem={(item) => `${item.name} (${item.gender})`}
+                    maxPageId='214'
                 />
             )
 
